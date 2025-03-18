@@ -1,0 +1,35 @@
+@media (min-width: 1000px){
+    /* Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 1em;
+    text-align: center;
+}
+
+main {
+    max-width: 900px;
+    margin: 2em auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+main p {
+    text-align: justify;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+}
+
+}
