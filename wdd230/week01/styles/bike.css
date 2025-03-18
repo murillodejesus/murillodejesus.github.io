@@ -1,0 +1,107 @@
+:root {
+    --primary-color: #333300;
+    --secondary-color: #FAFAD2;
+    --accent1-color: #CCCC00;
+    --accent2-color:#FFFF00;
+
+    --heading-font: 'roboto', serif;
+    --paragraph-font:'roboto', serif;
+
+    --nav-background-color:#FFFF00;
+    --nav-link-color: #CCCC00 ;
+    --nav-hover-link-color:#FFFF00;
+    --nav-hover-background-color: #CCCC00;
+}
+
+/* Base Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #ecf0f1;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 18px 89px;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+
+
+nav ul li a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+/* Flex for Navigation */
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+main {
+    max-width: 900px;
+    margin: 2em auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+main p {
+    text-align: justify;
+}
+
+/* figure */
+
+figure{
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+}
+
+figure img {
+    max-width: 150px;
+    max-height: 220px;
+    left: 35px;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller roboto;
+    padding: 3px;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: #ecf0f1;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+}
