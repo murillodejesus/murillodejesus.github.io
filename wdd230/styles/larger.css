@@ -1,35 +1,26 @@
-@media (min-width: 1000px){
-    /* Base Styles */
-body {
-    margin: 0;
-    padding: 0;
-}
+@media screen and (min-width: 768px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
 
-header {
-    padding: 1em;
-    text-align: center;
-}
+    nav ul li {
+        margin: 0 10px;
+    }
 
-main {
-    max-width: 900px;
-    margin: 2em auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-}
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+    }
 
-main p {
-    text-align: justify;
-}
+    header {
+        justify-content: start;
+        padding: 10px 20px;
+    }
 
-footer {
-    text-align: center;
-    padding: 1em;
-    position: relative;
-}
-
-footer p {
-    margin: 0;
-}
-
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
 }
