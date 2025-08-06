@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Creative Developer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <a href="#home">Portfolio</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link btn-contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Creative Developer</h1>
+                    <p class="hero-description">
+                        I craft digital experiences that blend innovative design with robust functionality, 
+                        creating solutions that make a meaningful impact.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="scroll-indicator">
+                    <a href="#about" class="scroll-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            I'm a passionate developer who believes in the power of clean code and beautiful design. 
+                            With over 5 years of experience in web development, I've had the privilege of working on 
+                            projects that range from small business websites to large-scale applications.
+                        </p>
+                        <p>
+                            My approach combines technical expertise with creative problem-solving, always keeping 
+                            the user experience at the forefront. I'm constantly learning new technologies and 
+                            pushing the boundaries of what's possible on the web.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">AWS</span>
+                        </div>
+                    </div>
+                    <div class="about-skills">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="16,18 22,12 16,6"></polyline>
+                                    <polyline points="8,6 2,12 8,18"></polyline>
+                                </svg>
+                            </div>
+                            <h3>Development</h3>
+                            <p>Full-stack development with modern frameworks and technologies</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                </svg>
+                            </div>
+                            <h3>Design</h3>
+                            <p>UI/UX design with focus on user experience and accessibility</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"></polygon>
+                                </svg>
+                            </div>
+                            <h3>Performance</h3>
+                            <p>Optimized solutions for speed, scalability, and reliability</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Selected Projects</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-description">
+                        A collection of projects that showcase my skills in development, design, and problem-solving.
+                    </p>
+                </div>
+                <div class="projects-grid">
+                    <article class="project">
+                        <div class="project-image">
+                            <img src="https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800" alt="E-Commerce Platform">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                        </svg>
+                                        Code
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15,3 21,3 21,9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                        Live Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">E-Commerce Platform</h3>
+                            <p class="project-description">
+                                A full-stack e-commerce solution built with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, inventory management, and real-time order tracking.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Stripe</span>
+                                <span class="tech-tag">AWS</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project">
+                        <div class="project-image">
+                            <img src="https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Task Management App">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                        </svg>
+                                        Code
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15,3 21,3 21,9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                        Live Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Task Management App</h3>
+                            <p class="project-description">
+                                A collaborative project management tool with real-time updates, drag-and-drop functionality, and team collaboration features. Built with modern web technologies for optimal performance.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">Tailwind CSS</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project">
+                        <div class="project-image">
+                            <img src="https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Weather Analytics Dashboard">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                        </svg>
+                                        Code
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15,3 21,3 21,9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                        Live Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Weather Analytics Dashboard</h3>
+                            <p class="project-description">
+                                An interactive dashboard displaying real-time weather data with beautiful visualizations and predictive analytics. Integrates multiple weather APIs for comprehensive coverage.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">D3.js</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">FastAPI</span>
+                                <span class="tech-tag">Docker</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Experience</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="experience-content">
+                    <div class="experience-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3>Senior Full Stack Developer</h3>
+                                <div class="timeline-meta">
+                                    <span class="company">Tech Solutions Inc.</span>
+                                    <span class="period">2022 - Present</span>
+                                    <span class="location">San Francisco, CA</span>
+                                </div>
+                                <p>Led development of scalable web applications serving 100k+ users. Mentored junior developers and implemented best practices for code quality and performance optimization.</p>
+                                <ul class="achievements">
+                                    <li>Reduced application load time by 40% through optimization</li>
+                                    <li>Led team of 5 developers on major product redesign</li>
+                                    <li>Implemented CI/CD pipeline reducing deployment time by 60%</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3>Frontend Developer</h3>
+                                <div class="timeline-meta">
+                                    <span class="company">Digital Agency Pro</span>
+                                    <span class="period">2020 - 2022</span>
+                                    <span class="location">New York, NY</span>
+                                </div>
+                                <p>Developed responsive web applications using React and modern frontend technologies. Collaborated with design teams to create pixel-perfect implementations.</p>
+                                <ul class="achievements">
+                                    <li>Built 15+ client websites with 99% client satisfaction</li>
+                                    <li>Improved mobile performance scores by 35% average</li>
+                                    <li>Introduced component library reducing development time</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3>Junior Web Developer</h3>
+                                <div class="timeline-meta">
+                                    <span class="company">StartUp Ventures</span>
+                                    <span class="period">2019 - 2020</span>
+                                    <span class="location">Austin, TX</span>
+                                </div>
+                                <p>Started career building dynamic websites and learning full-stack development. Worked on various projects from e-commerce to content management systems.</p>
+                                <ul class="achievements">
+                                    <li>Developed 10+ websites using HTML, CSS, and JavaScript</li>
+                                    <li>Learned React, Node.js, and database management</li>
+                                    <li>Contributed to open-source projects</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-section">
+                        <h3>Core Skills</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">JavaScript</div>
+                            <div class="skill-item">TypeScript</div>
+                            <div class="skill-item">React</div>
+                            <div class="skill-item">Node.js</div>
+                            <div class="skill-item">Python</div>
+                            <div class="skill-item">PostgreSQL</div>
+                            <div class="skill-item">MongoDB</div>
+                            <div class="skill-item">AWS</div>
+                            <div class="skill-item">Git</div>
+                            <div class="skill-item">Docker</div>
+                            <div class="skill-item">REST APIs</div>
+                            <div class="skill-item">GraphQL</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-description">
+                        I'm always interested in new opportunities and collaborations. 
+                        Let's create something amazing together.
+                    </p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-form-container">
+                        <h3>Send a Message</h3>
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22,2 15,22 11,13 2,9 22,2"></polygon>
+                                </svg>
+                                Send Message
+                            </button>
+                        </form>
+                        <div class="form-success" id="form-success">
+                            <div class="success-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"></polyline>
+                                </svg>
+                            </div>
+                            <h4>Message Sent!</h4>
+                            <p>Thank you for reaching out. I'll get back to you soon.</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info">
+                        <h3>Let's Connect</h3>
+                        <p>
+                            I'm based in San Francisco but work with clients worldwide. Whether you have a 
+                            project in mind, want to collaborate, or just want to say hello, I'd love to hear from you.
+                        </p>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <span>San Francisco, CA</span>
+                            </div>
+                            <div class="contact-item">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                <a href="mailto:hello@example.com">hello@example.com</a>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <h4>Follow Me</h4>
+                            <div class="social-icons">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                        <rect x="2" y="9" width="4" height="12"></rect>
+                                        <circle cx="4" cy="4" r="2"></circle>
+                                    </svg>
+                                </a>
+                                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                                    </svg>
+                                </a>
+                                <a href="mailto:hello@example.com">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="availability">
+                            <h4>Currently Available</h4>
+                            <p>I'm open to new opportunities and interesting projects. Let's discuss how we can work together.</p>
+                            <div class="status">
+                                <div class="status-indicator"></div>
+                                <span>Available for hire</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home">Portfolio</a>
+                </div>
+                <nav class="footer-nav">
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Portfolio. Made with <span class="heart">♥</span> and clean code.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
