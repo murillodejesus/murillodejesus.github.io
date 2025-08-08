@@ -169,3 +169,39 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// APLICA O EFEITO DE CÍRCULOS INTERATIVOS NO BACKGROUND
+document.addEventListener('DOMContentLoaded', () => {
+    const backgroundInterativo = document.querySelector('.background-interativo');
+    if (!backgroundInterativo) return;
+
+    const tamanhoQuadrado = 25;
+    const colunas = Math.floor(window.innerWidth / tamanhoQuadrado);
+    const linhas = Math.floor(window.innerHeight / tamanhoQuadrado);
+    const corDestaque = '#28AFB0';
+    const corMonocromatica = '#1a1a1a';
+    const tempoDesaparecimento = 700;
+
+    // Cria os círculos e os adiciona ao container
+    for (let i = 0; i < colunas * linhas; i++) {
+        const quadrado = document.createElement('div');
+        quadrado.classList.add('quadrado');
+        quadrado.style.width = `${tamanhoQuadrado}px`;
+        quadrado.style.height = `${tamanhoQuadrado}px`;
+        backgroundInterativo.appendChild(quadrado);
+    }
+
+    const quadrados = document.querySelectorAll('.quadrado');
+
+    quadrados.forEach(quadrado => {
+        quadrado.addEventListener('mouseover', () => {
+            quadrado.style.backgroundColor = corDestaque;
+            quadrado.style.boxShadow = `0 0 15px 5px ${corDestaque}`;
+
+            setTimeout(() => {
+                quadrado.style.backgroundColor = corMonocromatica;
+                quadrado.style.boxShadow = `0 0 0px ${corDestaque}`;
+            }, tempoDesaparecimento);
+        });
+    });
+});
