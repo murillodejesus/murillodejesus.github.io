@@ -889,27 +889,36 @@ section {
         left: 0.75rem;
     }
 }
-/* Garante que o cabeçalho seja o container para o efeito */
-.header {
+
+/* --- ESTILOS DO FUNDO INTERATIVO DENTRO DO MAIN --- */
+/* Certifique-se de que a tag main tenha position: relative */
+main {
     position: relative;
-    overflow: hidden; /* Importante para que os círculos não ultrapassem a borda do header */
+    overflow: hidden; /* Importante para que os círculos não ultrapassem a borda do main */
 }
 
-/* Estilo para o container do efeito */
-.background-interativo {
-    position: absolute;
+#interactive-background {
+    position: absolute; /* Posiciona o elemento de forma absoluta em relação ao main */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Coloca o fundo atrás do conteúdo do header */
-    pointer-events: none; /* Permite interagir com os links e o nav */
+    z-index: -1; /* Posiciona o fundo por trás de todo o conteúdo da main */
+    pointer-events: none; /* Permite que o mouse interaja com os elementos que estão na frente */
+    display: flex; /* Permite o alinhamento dos círculos */
+    flex-wrap: wrap; /* Permite que os círculos quebrem a linha */
 }
 
-/* Estilo para os círculos (ajuste conforme a necessidade) */
 .quadrado {
     background-color: #1a1a1a;
     border-radius: 50%;
     transition: background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
     box-shadow: 0 0 0px rgba(40, 175, 176, 0);
+}
+
+/* --- ESTILOS PARA GARANTIR QUE O CONTEÚDO FIQUE ACIMA DO FUNDO --- */
+/* O z-index já está definido nas tags children de main. */
+/* Garantimos que a tag main e as sections tenham um background para que a cor base monocromática seja visível */
+main, .hero, .about, .projects, .experience, .contact {
+    background-color: #1a1a1a; /* Cor de fundo base do site */
 }
