@@ -1,0 +1,59 @@
+HTML
+
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Efeito Monocromático Suave</title>
+     <style>
+         body {
+             margin: 0;
+             display: flex;
+             flex-wrap: wrap;
+             height: 100vh;
+             width: 100vw;
+             overflow: hidden;
+         }
+
+         .quadrado {
+             background-color: #1a1a1a; /* Cor monocromática inicial */
+             width: 20px; /* Tamanho menor para um efeito mais denso */
+             height: 20px;
+             transition: background-color 0.5s ease-in-out; /* Transição suave */
+             aspect-ratio: 100/10;
+         }
+     </style>
+ </head>
+ <body>
+
+     <script>
+         const body = document.body;
+         const tamanhoQuadrado = 20;
+         const colunas = Math.floor(window.innerWidth / tamanhoQuadrado);
+         const linhas = Math.floor(window.innerHeight / tamanhoQuadrado);
+         const corDestaque = '#28AFB0';
+         const corMonocromatica = '#1a1a1a';
+         const tempoDesaparecimento = 500; // Milissegundos
+
+         for (let i = 0; i < colunas * linhas; i++) {
+             const quadrado = document.createElement('div');
+             quadrado.classList.add('quadrado');
+             body.appendChild(quadrado);
+         }
+
+         const quadrados = document.querySelectorAll('.quadrado');
+
+         quadrados.forEach(quadrado => {
+             quadrado.addEventListener('mouseover', () => {
+                 quadrado.style.backgroundColor = corDestaque;
+
+                 setTimeout(() => {
+                     quadrado.style.backgroundColor = corMonocromatica;
+                 }, tempoDesaparecimento);
+             });
+         });
+     </script>
+
+ </body>
+ </html>
