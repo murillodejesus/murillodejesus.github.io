@@ -170,14 +170,19 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// APLICA O EFEITO DE CÍRCULOS INTERATIVOS NO BACKGROUND
+// APLICA O EFEITO DE CÍRCULOS INTERATIVOS NO HEADER
 document.addEventListener('DOMContentLoaded', () => {
+    const header = document.getElementById('header');
     const backgroundInterativo = document.querySelector('.background-interativo');
-    if (!backgroundInterativo) return;
+    if (!header || !backgroundInterativo) return;
 
-    const tamanhoQuadrado = 25;
-    const colunas = Math.floor(window.innerWidth / tamanhoQuadrado);
-    const linhas = Math.floor(window.innerHeight / tamanhoQuadrado);
+    // Define o tamanho dos círculos
+    const tamanhoQuadrado = 15;
+
+    // Calcula a quantidade de círculos com base no tamanho do header
+    const colunas = Math.floor(header.offsetWidth / tamanhoQuadrado);
+    const linhas = Math.floor(header.offsetHeight / tamanhoQuadrado);
+
     const corDestaque = '#28AFB0';
     const corMonocromatica = '#1a1a1a';
     const tempoDesaparecimento = 700;

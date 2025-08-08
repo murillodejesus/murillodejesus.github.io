@@ -889,20 +889,24 @@ section {
         left: 0.75rem;
     }
 }
+/* Garante que o cabeçalho seja o container para o efeito */
+.header {
+    position: relative;
+    overflow: hidden; /* Importante para que os círculos não ultrapassem a borda do header */
+}
 
-/* Estilo para o fundo interativo */
+/* Estilo para o container do efeito */
 .background-interativo {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
-    z-index: -1; /* Garante que o fundo fique atrás do conteúdo */
-    pointer-events: none; /* Permite que o mouse interaja com o conteúdo por baixo */
+    z-index: -1; /* Coloca o fundo atrás do conteúdo do header */
+    pointer-events: none; /* Permite interagir com os links e o nav */
 }
 
-/* Estilo para os círculos */
+/* Estilo para os círculos (ajuste conforme a necessidade) */
 .quadrado {
     background-color: #1a1a1a;
     border-radius: 50%;
